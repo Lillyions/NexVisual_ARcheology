@@ -4,9 +4,23 @@ using UnityEngine;
 
 public class CubeInteractor : MonoBehaviour, InInteractable
 {
+
+    private bool isHeld = false;
+
     public void OnInteract()
     {
         Debug.Log("Interagindo com o cubo!");
+
+        isHeld = !isHeld;
+
+        if (isHeld)
+        {
+            HoldingManager.Instance.PickUp(gameObject);
+        }
+        else
+        {
+            HoldingManager.Instance.Drop();
+        }
     }
 
     public void StopInteract()

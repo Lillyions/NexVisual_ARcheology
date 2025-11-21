@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5026484845938445440}
   m_Layer: 0
-  m_Name: Cubes Template
+  m_Name: Scene Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

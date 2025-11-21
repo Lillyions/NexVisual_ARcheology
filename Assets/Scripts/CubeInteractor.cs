@@ -11,15 +11,16 @@ public class CubeInteractor : MonoBehaviour, InInteractable
     {
         Debug.Log("Interagindo com o cubo!");
 
-        isHeld = !isHeld;
+        //isHeld = !isHeld;
 
-        if (isHeld)
+        if (HoldingManager.Instance.TryPickUp(gameObject))
         {
-            HoldingManager.Instance.PickUp(gameObject);
+            isHeld = true;
         }
-        else
+        else if (isHeld)
         {
             HoldingManager.Instance.Drop();
+            isHeld = false;
         }
     }
 

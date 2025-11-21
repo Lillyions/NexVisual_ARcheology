@@ -29,7 +29,17 @@ public class HoldingManager : MonoBehaviour
             Vector3 targetPosition = cameraTransform.position + cameraTransform.forward * holdDistance;
             heldObject.transform.position = Vector3.Lerp(heldObject.transform.position, targetPosition, Time.deltaTime * speed);
         }
-    } 
+    }
+
+    public bool TryPickUp(GameObject obj)
+    {
+        if (heldObject == null)
+        {
+            PickUp(obj);
+            return true;
+        }
+        return false;
+    }
 
     public void PickUp(GameObject obj)
     {

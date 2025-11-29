@@ -9,7 +9,7 @@ public class CabinetController : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.TryGetComponent<InInteractable>(out InInteractable interactable))
+        if (collision.transform.TryGetComponent<IInteractable>(out IInteractable interactable))
         {
             TryToPutOnCabinet(collision.gameObject);
         }

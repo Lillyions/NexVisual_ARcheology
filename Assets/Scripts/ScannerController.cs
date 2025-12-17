@@ -5,6 +5,14 @@ using UnityEngine;
 public class ScannerController : MonoBehaviour
 {
     [SerializeField] private SpotController spot;
+    [SerializeField] private float scanDuration = 3f;
+
+    private Animator animator;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     void OnCollisionEnter(Collision collision)
     {
@@ -27,6 +35,19 @@ public class ScannerController : MonoBehaviour
             {
                 body.isKinematic = true;
             }
+
+            StartCoroutine(StartScanning());
         }
+    }
+
+    private IEnumerator StartScanning()
+    {
+        Debug.Log("Started Scanning...");
+        animator.SetBool("isScanning", true);
+
+        yield return new WaitForSeconds(scanDuration);
+        
+        animator.SetBool("isScanning", false);
+        Debug.Log("Scanning Complete.");
     }
 }

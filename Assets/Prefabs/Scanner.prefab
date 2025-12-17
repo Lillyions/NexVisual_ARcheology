@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3914453315566018235}
   - component: {fileID: 6728176400978113163}
   - component: {fileID: 5105911934128946894}
+  - component: {fileID: 6328950943955064806}
   m_Layer: 0
   m_Name: Scanner
   m_TagString: Untagged
@@ -69,6 +70,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spot: {fileID: 5259881891015145082}
+  scanDuration: 4
+--- !u!95 &6328950943955064806
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8295564169110554584}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 04eac1582ae5c044e9893f0d9bc47524, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &6255759751651232990
 PrefabInstance:
   m_ObjectHideFlags: 0

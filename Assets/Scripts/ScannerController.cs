@@ -6,6 +6,7 @@ public class ScannerController : MonoBehaviour
 {
     [SerializeField] private SpotController spot;
     [SerializeField] private float scanDuration = 3f;
+    [SerializeField] private GameObject scanUI;
 
     private Animator animator;
 
@@ -44,10 +45,12 @@ public class ScannerController : MonoBehaviour
     {
         Debug.Log("Started Scanning...");
         animator.SetBool("isScanning", true);
+        scanUI.SetActive(false);
 
         yield return new WaitForSeconds(scanDuration);
         
         animator.SetBool("isScanning", false);
+        scanUI.SetActive(true);
         Debug.Log("Scanning Complete.");
     }
 }

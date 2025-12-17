@@ -6,7 +6,7 @@ public class ScannerController : MonoBehaviour
 {
     [SerializeField] private SpotController spot;
 
-    void OllisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.TryGetComponent<IInteractable>(out IInteractable interactable))
         {

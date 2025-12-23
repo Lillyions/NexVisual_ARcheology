@@ -37,20 +37,27 @@ public class ScannerController : MonoBehaviour
                 body.isKinematic = true;
             }
 
-            StartCoroutine(StartScanning());
+            if (obj.TryGetComponent(out ObjectInteractor interactor))
+            {
+                //interactor.SetLocked(true);
+                StartCoroutine(StartScanning(interactor));
+            }
+
         }
     }
 
-    private IEnumerator StartScanning()
+    private IEnumerator StartScanning(ObjectInteractor interactor)
     {
         Debug.Log("Started Scanning...");
         animator.SetBool("isScanning", true);
         scanUI.SetActive(false);
+        interactor.SetLocked(true);
 
         yield return new WaitForSeconds(scanDuration);
         
         animator.SetBool("isScanning", false);
         scanUI.SetActive(true);
+        interactor.SetLocked(false);
         Debug.Log("Scanning Complete.");
     }
 }

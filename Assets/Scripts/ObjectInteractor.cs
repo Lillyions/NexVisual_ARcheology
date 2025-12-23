@@ -8,10 +8,13 @@ public class ObjectInteractor : MonoBehaviour, IInteractable
     [SerializeField] private float infoDisplayDistance = 2f;
 
     private bool isHeld = false;
+    private bool isLocked = false;
 
     public void OnInteract()
     {
-        Debug.Log("Interagindo com o cubo!");
+        Debug.Log("Interagindo com o objeto!");
+
+        if (isLocked) return;
 
         if (HoldingManager.Instance.TryPickUp(gameObject))
         {
@@ -67,5 +70,10 @@ public class ObjectInteractor : MonoBehaviour, IInteractable
             infoController.SetVisible(false);
             infoController.transform.SetParent(null);
         }
+    }
+
+    public void SetLocked(bool locked = true)
+    {
+        isLocked = locked;
     }
 }

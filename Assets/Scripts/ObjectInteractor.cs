@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CubeInteractor : MonoBehaviour, IInteractable
+public class ObjectInteractor : MonoBehaviour, IInteractable
 {
     [SerializeField] private SO_ObjectInfo objectInfo;
+    [SerializeField] private float infoDisplayDistance = 2f;
 
     private bool isHeld = false;
 
@@ -53,7 +54,7 @@ public class CubeInteractor : MonoBehaviour, IInteractable
             infoController.SetVisible(true);
 
             infoController.transform.SetParent(transform);
-            infoController.transform.localPosition = new Vector3(0, 2f, 0);
+            infoController.transform.localPosition = new Vector3(0, infoDisplayDistance, 0);
         }
     }
 

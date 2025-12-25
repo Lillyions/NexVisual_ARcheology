@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CubeInteractor : MonoBehaviour, InInteractable
+public class CubeInteractor : MonoBehaviour, IInteractable
 {
 
     private bool isHeld = false;

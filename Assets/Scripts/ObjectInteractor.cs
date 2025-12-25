@@ -9,6 +9,7 @@ public class ObjectInteractor : MonoBehaviour, IInteractable
 
     private bool isHeld = false;
     private bool isLocked = false;
+    private bool isScanned = false;
 
     public void OnInteract()
     {
@@ -47,7 +48,7 @@ public class ObjectInteractor : MonoBehaviour, IInteractable
     
     private void ShowObjectInfo()
     {
-        if (objectInfo == null) return;
+        if (objectInfo == null || isScanned == false) return;
 
         var infoController = FindObjectOfType<ObjectInfoController>();
 
@@ -75,5 +76,10 @@ public class ObjectInteractor : MonoBehaviour, IInteractable
     public void SetLocked(bool locked = true)
     {
         isLocked = locked;
+    }
+
+    public void SetScanned(bool scanned = true)
+    {
+        isScanned = scanned;
     }
 }

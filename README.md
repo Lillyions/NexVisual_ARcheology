@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-      <a href="https://drive.google.com/file/d/16G6otAPYGWMJyAzVpu-lUbUbDJyBk1cc/view?usp=sharing">📁 Access the Certificate Page [PDF - drive.google] </a>
+      <a href="https://drive.google.com/file/d/16G6otAPYGWMJyAzVpu-lUbUbDJyBk1cc/view?usp=sharing" target="_blank">📁 Access the Certificate Page [PDF - drive.google] </a>
 </p>
 
 <h2 id="tech">💻 Technologies</h2>

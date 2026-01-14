@@ -12,7 +12,8 @@
 </p>
 
 <p align="center">
-      <a href="https://drive.google.com/file/d/16G6otAPYGWMJyAzVpu-lUbUbDJyBk1cc/view?usp=sharing" target="_blank">📁 Access the Certificate Page [PDF - drive.google] </a>
+      <a href="https://drive.google.com/file/d/16G6otAPYGWMJyAzVpu-lUbUbDJyBk1cc/view?usp=sharing" target="_blank">📁 Access the Certificate </a> •
+      <a href="https://drive.google.com/drive/folders/10NLj1nRa7DikZV4fH5HyJL6WhJN-Uts8?usp=sharing" target="blank">🎮 Access the Project Build </a>
 </p>
 
 <h2 id="tech">💻 Technologies</h2>

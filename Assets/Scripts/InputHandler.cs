@@ -19,6 +19,9 @@ public class InputHandler : MonoBehaviour
         }
 #endif*/
 
+// Para testar a cena na Unity, precisa habilitar o código acima.
+// Quando for buildar para mobile, mantenha comentado, novamente.
+
         if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
         {
             var position = Touchscreen.current.primaryTouch.position.ReadValue();

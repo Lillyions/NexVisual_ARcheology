@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: SphereInfo
   m_EditorClassIdentifier: 
   objectTitle: Sphere
+  objectIcon: {fileID: 21300000, guid: 875e53b7744bf7c4e9f0e01fa7912e6f, type: 3}
   objectDescription: Its a most beatiful jewelry, and you find her! :)

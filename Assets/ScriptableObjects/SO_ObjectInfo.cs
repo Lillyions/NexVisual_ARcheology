@@ -8,6 +8,7 @@ public class SO_ObjectInfo : ScriptableObject
 {
     [Header("Object Informations")]
     public string objectTitle;
+    public Sprite objectIcon;
 
     [TextArea]
     public string objectDescription;

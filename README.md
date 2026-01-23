@@ -42,6 +42,6 @@ https://github.com/Lillyions/NexVisual_ARcheology.git
 
 <h2 id="colab">🤝 Collaborators</h2>
 
-Special thanks to NexVisual, TIC em Trilhas and Eldorado teachers, for the amazing content in the course. [TIC em Trilhas](https://ticemtrilhas.org.br/), [Eldorado Institute](https://www.eldorado.org.br/).
+Special thanks to NexVisual and Eldorado teachers, for the amazing content in the course. [Eldorado Institute](https://www.eldorado.org.br/), [NexVisual](https://nexvisual.catalog.instructure.com/).
 
 

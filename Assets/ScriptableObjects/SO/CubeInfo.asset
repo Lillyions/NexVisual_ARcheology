@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: CubeInfo
   m_EditorClassIdentifier: 
   objectTitle: Cube
+  objectIcon: {fileID: 21300000, guid: 155ba35bd5ff8b1478ad6f361ea9da04, type: 3}
   objectDescription: Thats the cube it was in a hidden cave! :o

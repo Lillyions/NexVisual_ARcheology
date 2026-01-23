@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: MuiraquitaInfo
   m_EditorClassIdentifier: 
   objectTitle: Muiraquita
+  objectIcon: {fileID: 21300000, guid: 53c8faaad7eacc641baa573a4409c727, type: 3}
   objectDescription: A rare piece with valuable red jewels! It is very beautiful
